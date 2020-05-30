@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Executed - Background step]]>
+    </line>
+    <line>
+      <![CDATA[Scenario1 step01 executed]]>
+    </line>
+    <line>
+      <![CDATA[Scenario1 step02 executed]]>
+    </line>
+    <line>
+      <![CDATA[Executed - Background step]]>
+    </line>
+    <line>
+      <![CDATA[Scenario2 step01 executed]]>
+    </line>
+    <line>
+      <![CDATA[Scenario2 step02 executed]]>
+    </line>
+    <line>
+      <![CDATA[scenario1 step01 executed]]>
+    </line>
+    <line>
+      <![CDATA[scenario1 step02 executed]]>
+    </line>
+    <line>
+      <![CDATA[Scenario : Login feature scenario1 is Failed]]>
+    </line>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="37675" started-at="2020-05-27T15:14:06 IST" finished-at="2020-05-27T15:14:44 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@78c03f1f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="37675" started-at="2020-05-27T15:14:06 IST" finished-at="2020-05-27T15:14:44 IST">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@78c03f1f]" name="setUpClass" is-config="true" duration-ms="784" started-at="2020-05-27T15:14:06 IST" finished-at="2020-05-27T15:14:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@78c03f1f]" name="runScenario" duration-ms="16188" started-at="2020-05-27T15:14:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-27T15:14:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Google Home scenario1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Home Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Executed - Background step]]>
+            </line>
+            <line>
+              <![CDATA[Scenario1 step01 executed]]>
+            </line>
+            <line>
+              <![CDATA[Scenario1 step02 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@78c03f1f]" name="runScenario" duration-ms="11149" started-at="2020-05-27T15:14:24 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-27T15:14:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Google Home scenario2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Home Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Executed - Background step]]>
+            </line>
+            <line>
+              <![CDATA[Scenario2 step01 executed]]>
+            </line>
+            <line>
+              <![CDATA[Scenario2 step02 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@78c03f1f]" name="runScenario" duration-ms="9193" started-at="2020-05-27T15:14:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-27T15:14:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login feature scenario1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at steps.LoginStep.verifyLoginPage(LoginStep.java:34)
+at ✽.scenario1 step02 executed(file:///E:/Workspace/code4test/BDDPractice/src/test/java/features/Login.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[scenario1 step01 executed]]>
+            </line>
+            <line>
+              <![CDATA[scenario1 step02 executed]]>
+            </line>
+            <line>
+              <![CDATA[Scenario : Login feature scenario1 is Failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@78c03f1f]" name="tearDownClass" is-config="true" duration-ms="281" started-at="2020-05-27T15:14:44 IST" finished-at="2020-05-27T15:14:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
